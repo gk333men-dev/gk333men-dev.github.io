@@ -9,8 +9,10 @@
 <meta property="og:description" content="Mobil arayüzler, reklam kreatifleri, marka kimlikleri ve AI video çalışmaları.">
 <meta name="theme-color" content="#0E0F12">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FFC72C'/%3E%3Ctext x='16' y='22.5' font-family='Arial,sans-serif' font-weight='700' font-size='17' text-anchor='middle' fill='%2315171C'%3EG%3C/text%3E%3C/svg%3E">
+<script>try { var q = /[?&]intro/.test(location.search); if (q || (!sessionStorage.getItem('gcIntro') && location.hash.length < 2 && !matchMedia('(prefers-reduced-motion: reduce)').matches)) document.documentElement.classList.add('intro', 'lock'); } catch (e) {}</script>
+<link rel="preload" as="image" href="assets/intro-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
 <style>
 :root { --bg: #0E0F12; --fg: #EEF0F3; --mute: #8B909C; --line: #23262E; --acc: #FFC72C; --gut: 40px; --s: 1; }
 * { box-sizing: border-box; }
@@ -61,10 +63,54 @@ footer { max-width: 1520px; margin: 0 auto; padding: 28px var(--gut) 48px; displ
 #fs[hidden] { display: none; }
 #fs iframe { position: absolute; left: 0; top: 0; width: 1440px; height: 1018px; border: 0; transform-origin: 0 0; }
 #fsx { position: absolute; right: 14px; top: max(14px, env(safe-area-inset-top)); z-index: 2; width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(255,255,255,.25); background: rgba(20,22,28,.75); color: #fff; font-size: 18px; cursor: pointer; }
+/* Giriş introsu: logo çizilerek açılır, isim yükselir, perde yukarı kalkar. Oturum başına bir kez. */
+#intro-w { display: none; }
+.intro #intro-w { display: block; }
+.lock body { overflow: hidden; }
+.intro #p01 .ph { opacity: 0; }
+#intro, #intro-acc { position: fixed; inset: 0; z-index: 100; clip-path: inset(0 0 0 0); }
+#intro-acc { z-index: 99; background: var(--acc); }
+#intro { background: var(--bg); display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.in-box { display: flex; flex-direction: column; align-items: center; gap: 26px; padding: 0 var(--gut); text-align: center; }
+.in-mark { position: relative; width: 132px; height: 132px; }
+.in-mark svg { position: absolute; inset: 0; overflow: visible; }
+.in-ring { fill: none; stroke: var(--acc); stroke-width: 1.5; stroke-dasharray: 403; stroke-dashoffset: 403; transform: rotate(-90deg); transform-origin: 66px 66px; animation: in-draw 1.1s cubic-bezier(.65,0,.35,1) .1s forwards; }
+.in-orb { transform-origin: 66px 66px; animation: in-spin 1.1s cubic-bezier(.65,0,.35,1) .1s both; }
+.in-mark img { position: absolute; inset: 14px; width: 104px; height: 104px; animation: in-logo 1s cubic-bezier(.2,.7,.2,1) .35s both; }
+.in-name { overflow: hidden; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: clamp(36px, 6vw, 68px); letter-spacing: -.045em; line-height: 1.05; padding: .14em .04em .24em; margin: -.14em 0 -.24em; }
+.in-name span { display: inline-block; animation: in-up .85s cubic-bezier(.2,.7,.2,1) .95s both; }
+.in-name b { color: var(--acc); font-weight: inherit; }
+.in-sub { margin-top: -10px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute); animation: in-fade .8s ease 1.3s both; }
+.in-bar { position: absolute; left: 50%; bottom: max(44px, calc(env(safe-area-inset-bottom) + 24px)); width: 120px; height: 1px; margin-left: -60px; background: var(--line); overflow: hidden; }
+.in-bar i { display: block; height: 100%; background: var(--acc); transform-origin: left; animation: in-load 2.3s linear both; }
+.in-skip { position: absolute; right: var(--gut); bottom: max(32px, calc(env(safe-area-inset-bottom) + 12px)); padding: 6px 2px; border: 0; background: none; font: 400 11px 'JetBrains Mono', monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); cursor: pointer; animation: in-fade .6s ease .6s both; }
+.in-skip:hover { color: var(--fg); }
+#intro-w.out #intro { animation: in-wipe .8s cubic-bezier(.76,0,.24,1) forwards; pointer-events: none; }
+#intro-w.out #intro-acc { animation: in-wipe .8s cubic-bezier(.76,0,.24,1) .13s forwards; }
+#intro-w.out .in-box { transform: translateY(-70px); opacity: 0; transition: transform .8s cubic-bezier(.76,0,.24,1), opacity .45s ease; }
+@keyframes in-draw { to { stroke-dashoffset: 0; } }
+@keyframes in-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes in-logo { from { opacity: 0; transform: scale(.55) rotate(-100deg); } to { opacity: 1; transform: none; } }
+@keyframes in-up { from { transform: translateY(110%); } to { transform: none; } }
+@keyframes in-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes in-load { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes in-wipe { to { clip-path: inset(0 0 100% 0); } }
 #fshint { position: absolute; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 2; padding: 9px 14px; border-radius: 999px; background: rgba(20,22,28,.85); color: #F4F4F6; font: 500 13px Inter, sans-serif; white-space: nowrap; transition: opacity .6s; pointer-events: none; }
 </style>
 </head>
 <body>
+<div id="intro-w" aria-hidden="true">
+  <div id="intro-acc"></div>
+  <div id="intro">
+    <div class="in-box">
+      <div class="in-mark"><svg viewBox="0 0 132 132" width="132" height="132"><circle class="in-ring" cx="66" cy="66" r="64"/><g class="in-orb"><circle cx="66" cy="2" r="4" fill="#FFC72C"/></g></svg><img src="assets/intro-logo.png" alt="" width="104" height="104"></div>
+      <div class="in-name"><span>Gökmen Çevikbaş<b>.</b></span></div>
+      <div class="in-sub">Grafik Tasarım · Portfolyo</div>
+    </div>
+    <div class="in-bar"><i></i></div>
+    <button class="in-skip" type="button" tabindex="-1">Geç →</button>
+  </div>
+</div>
 <header class="top">
   <a class="brand" href="#giris"><i></i>Gökmen Çevikbaş<span style="color: var(--mute); font-weight: 500">&nbsp;· Portfolyo</span></a>
   <nav aria-label="Bölümler"><a href="#uygulamalar">Uygulamalar</a><a href="#marka">Marka</a><a href="#editoryal">Editoryal</a><a href="#ai">AI Video</a><a href="#iletisim">İletişim</a></nav>
@@ -329,8 +375,24 @@ footer { max-width: 1520px; margin: 0 auto; padding: 28px var(--gut) 48px; displ
   // Canlı olmayan sayfalarda hafif ekran görüntüsü görünür.
   var frames = Array.prototype.slice.call(document.querySelectorAll('.frame iframe'));
   frames.forEach(function (f) { f.addEventListener('load', function () { if (f.getAttribute('src') && f.getAttribute('src') !== 'about:blank') f.classList.add('on'); }); });
-  function wake(f) { if (f._live) return; f._live = true; f.setAttribute('src', f.dataset.src); }
-  function sleepF(f) { if (!f._live) return; f._live = false; f.classList.remove('on'); f.setAttribute('src', 'about:blank'); }
+  // İntro sürerken kapak sayfası bekletilir; perde kalkarken yüklenir, kapak animasyonu izleyicinin gözü önünde oynar.
+  var H = document.documentElement, introOn = H.classList.contains('intro'), introW = document.getElementById('intro-w'), coverF = frames[0];
+  function wake(f) { if (f._live) return; if (f === coverF && introOn) { f._want = true; return; } f._live = true; f.setAttribute('src', f.dataset.src); }
+  function introOut() {
+    if (!introOn) return; introOn = false;
+    try { sessionStorage.setItem('gcIntro', '1'); } catch (e) {}
+    introW.classList.add('out'); H.classList.remove('lock');
+    if (coverF._want) wake(coverF);
+    setTimeout(function () { introW.remove(); H.classList.remove('intro'); }, 1000);
+  }
+  if (introOn) {
+    var bar = introW.querySelector('.in-bar i');
+    bar.addEventListener('animationend', introOut);
+    setTimeout(introOut, 6000);
+    introW.addEventListener('click', introOut);
+    ['keydown', 'wheel', 'touchmove'].forEach(function (t) { window.addEventListener(t, introOut, { passive: true }); });
+  }
+  function sleepF(f) { f._want = false; if (!f._live) return; f._live = false; f.classList.remove('on'); f.setAttribute('src', 'about:blank'); }
   var phone = window.innerWidth < 820 || (window.matchMedia && matchMedia('(pointer: coarse)').matches && Math.min(screen.width, screen.height) < 820);
   if (!phone || !('IntersectionObserver' in window)) {
     frames.forEach(wake);
