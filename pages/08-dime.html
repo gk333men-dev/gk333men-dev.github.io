@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>08 Dime · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#C2410C}a:hover{color:#9A3412}
+.dm-box{position:relative;height:100%;max-width:100%;aspect-ratio:2000 / 1106}
+.dm-box img{width:100%;height:100%;display:block}
+.dm-spots{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));pointer-events:none}
+.dm-spots span{background:rgba(255,255,255,.66);animation:dm-spot 8s ease-in-out infinite}
+.dm-spots span:nth-child(2){animation-delay:-6s}.dm-spots span:nth-child(3){animation-delay:-4s}.dm-spots span:nth-child(4){animation-delay:-2s}
+@keyframes dm-spot{0%,22%{opacity:0}28%,94%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.dm-spots{display:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #F4F3F1; color: #15171C; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470; padding-bottom: 18px; border-bottom: 1px solid #D9D7D0">
+    <span>01 — Mobil Uygulamalar · UI/UX</span>
+    <span>08</span>
+  </header>
+  <div style="display: grid; grid-template-columns: 96px minmax(0, 1.1fr) minmax(0, 1.3fr) 280px; gap: 40px; align-items: start">
+    <div style="width: 96px; height: 96px; border-radius: 22px; background: #0F1114; overflow: hidden; box-shadow: 0 8px 24px rgba(21, 23, 28, 0.18)">
+      <img src="../assets/247f3cfa40294559e5289a73e4530e21.png" alt="Dime logosu" style="width: 100%; height: 100%; display: block">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: -0.035em">Dime</h1>
+      <span style="font-size: 18px; color: #5E6470">Fatura &amp; Teklif · iOS</span>
+    </div>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2A2D35">Usta ve esnaflar için fatura ve fiyat teklifi uygulaması. Dönüşümü test etmek için dört paywall varyantı tasarladım: ana paywall, özellik listeli B varyantı, geri sayımlı indirim ve geri kazanım (win‑back) ekranı.</p>
+    <dl style="margin: 0; display: grid; grid-template-columns: 84px minmax(0, 1fr); row-gap: 10px; font-size: 15px">
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Yıl</dt><dd style="margin: 0">2026</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Paywall A/B varyantları</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Renk</dt><dd style="margin: 0; display: flex; gap: 6px; align-items: center"><span style="width: 16px; height: 16px; background: #FF5A1F; display: inline-block"></span><span style="width: 16px; height: 16px; background: #1F7A45; display: inline-block"></span><span style="width: 16px; height: 16px; background: #FFFFFF; border: 1px solid #D9D7D0; display: inline-block"></span></dd>
+    </dl>
+  </div>
+  <figure style="margin: 0; flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; background: #FFFFFF; border: 1px solid #E4E2DC">
+    <div class="dm-box">
+      <img src="../assets/81a8f3de76966dc9938ff13b0b562755.jpg" alt="Dime için dört paywall varyantı">
+      <div class="dm-spots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    </div>
+  </figure>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

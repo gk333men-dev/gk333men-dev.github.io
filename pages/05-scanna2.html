@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>05 Scanna — Akışlar · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#34D27B}a:hover{color:#7BE6A8}
+.sc-fig{position:relative;animation:sc-float 6s ease-in-out infinite}
+.sc-fig:nth-child(2){animation-delay:-1.2s}.sc-fig:nth-child(3){animation-delay:-2.4s}.sc-fig:nth-child(4){animation-delay:-3.6s}.sc-fig:nth-child(5){animation-delay:-4.8s}
+.sc-scan{position:absolute;left:14px;right:14px;top:0;height:3px;border-radius:2px;background:#34D27B;box-shadow:0 0 18px 4px rgba(52,210,123,.55);opacity:0;pointer-events:none;animation:sc-scan 3.6s cubic-bezier(.45,0,.55,1) infinite}
+.sc-fig:nth-child(2) .sc-scan{animation-delay:.7s}.sc-fig:nth-child(3) .sc-scan{animation-delay:1.4s}.sc-fig:nth-child(4) .sc-scan{animation-delay:2.1s}.sc-fig:nth-child(5) .sc-scan{animation-delay:2.8s}
+@keyframes sc-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes sc-scan{0%{opacity:0;transform:translateY(60px)}12%,78%{opacity:1}92%,100%{opacity:0;transform:translateY(460px)}}
+@media (prefers-reduced-motion: reduce){.sc-fig,.sc-scan{animation:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #0C110F; color: #F2F5F3; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #9AA59F; padding-bottom: 18px; border-bottom: 1px solid #1F2A25">
+    <span>01 — Mobil Uygulamalar · Scanna</span>
+    <span>05</span>
+  </header>
+  <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; align-items: end">
+    <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 56px; line-height: 1.02; letter-spacing: -0.03em">Tara, kontrol et, oluştur, sakla.</h1>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D3DAD6">Tarama sonucu ekranları içerik tipine göre (bağlantı, Wi‑Fi, kişi) farklılaşıyor; güvenlik rozeti her zaman ilk bakışta okunuyor. Oluşturma tarafında hazır şablonlar ve stil stüdyosu, geçmiş ekranında ise filtrelenebilir bir arşiv var.</p>
+  </div>
+  <div style="flex: 1; min-height: 0; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px">
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/02e92b7bb8ef5b0527cbcda8348b87f9.jpg" alt="Tarama sonucu: güvenli bağlantı" style="height: 516px; width: auto; border-radius: 32px; border: 1px solid #26302B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA59F">Sonuç · Güvenli</figcaption>
+    </figure>
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/1feb65d1ae2c26511cdd3c46a86843bd.jpg" alt="Tarama sonucu: Wi-Fi" style="height: 516px; width: auto; border-radius: 32px; border: 1px solid #26302B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA59F">Sonuç · Wi‑Fi</figcaption>
+    </figure>
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/7238d949f8c0e560d422371517b80378.jpg" alt="Kod oluşturma ekranı" style="height: 516px; width: auto; border-radius: 32px; border: 1px solid #26302B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA59F">Oluştur</figcaption>
+    </figure>
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/d883d383384f441fb8066fcc73408a47.jpg" alt="Stil stüdyosu hazır şablonlar" style="height: 516px; width: auto; border-radius: 32px; border: 1px solid #26302B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA59F">Stüdyo · Şablonlar</figcaption>
+    </figure>
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/8d9e124d99016e0c6611596c0e8a3559.jpg" alt="Geçmiş ekranı" style="height: 516px; width: auto; border-radius: 32px; border: 1px solid #26302B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA59F">Geçmiş</figcaption>
+    </figure>
+  </div>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

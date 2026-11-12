@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>21 REDOX · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#15171C}a:hover{color:#5E6470}
+.lg-stage{position:relative;height:100%;max-width:100%;overflow:hidden;perspective:1400px}
+.lg-stage img{position:absolute;display:block;mix-blend-mode:multiply;will-change:transform,opacity}
+.lg-mark{animation:rx-mark 9s cubic-bezier(.16,1,.3,1) infinite,rx-glitch 3s steps(1,end) infinite}
+.lg-word{animation:rx-word 9s cubic-bezier(.7,0,.3,1) infinite}
+.lg-tile{animation:rx-tile 9s cubic-bezier(.16,1,.3,1) infinite}
+.lg-tile.lg-d1{animation-delay:.1s}.lg-tile.lg-d2{animation-delay:.2s}
+.lg-bar{transform-origin:50% 0;animation:rx-bar 9s cubic-bezier(.16,1,.3,1) infinite}
+.lg-bar.lg-d1{animation-delay:.1s}
+.lg-band{animation:rx-band 9s cubic-bezier(.7,0,.3,1) infinite}
+.lg-still img{animation:none !important}
+@keyframes rx-mark{0%,48%{opacity:1;transform:none;filter:none}54%{opacity:0;transform:translateX(180px) skewX(-22deg);filter:blur(10px)}55%{opacity:0;transform:translateX(-240px) skewX(-22deg);filter:blur(10px)}65%{opacity:1;transform:translateX(14px) skewX(5deg);filter:blur(0)}70%,100%{opacity:1;transform:none;filter:none}}
+@keyframes rx-glitch{0%,70%{translate:0 0}72%{translate:-7px 0}74%{translate:6px 1px}76%{translate:-3px 0}78%,100%{translate:0 0}}
+@keyframes rx-word{0%,48%{clip-path:inset(0 0 0 0)}53%{clip-path:inset(0 0 0 100%)}54%,62%{clip-path:inset(0 100% 0 0)}72%,100%{clip-path:inset(0 0 0 0)}}
+@keyframes rx-tile{0%,48%{opacity:1;transform:none}54%{opacity:0;transform:rotateY(90deg)}55%,64%{opacity:0;transform:rotateY(-90deg)}76%,100%{opacity:1;transform:none}}
+@keyframes rx-bar{0%,48%{transform:none}54%,68%{transform:scaleY(0)}78%,100%{transform:none}}
+@keyframes rx-band{0%,48%{clip-path:polygon(0 0,115% 0,100% 100%,-15% 100%)}54%{clip-path:polygon(115% 0,115% 0,100% 100%,100% 100%)}55%,68%{clip-path:polygon(0 0,0 0,-15% 100%,-15% 100%)}82%,100%{clip-path:polygon(0 0,115% 0,100% 100%,-15% 100%)}}
+@media (prefers-reduced-motion: reduce){.lg-stage img{animation:none !important}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #F3F2EE; color: #15171C; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470; padding-bottom: 18px; border-bottom: 1px solid #D9D7D0">
+    <span>02 — Marka Kimliği</span>
+    <span>21</span>
+  </header>
+  <main style="flex: 1; min-height: 0; display: flex; gap: 64px">
+    <section style="width: 360px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470">Teknoloji Ürün Markası</span>
+        <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 88px; line-height: 0.95; letter-spacing: -0.04em">REDOX</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2A2D35">Kulaklık ve elektronik ürünler için keskin, hız hissi veren bir R amblemi. Logo; siyah, kırmızı ve lacivert zeminlerde çalışan bir renk sistemi ve yatay marka bandıyla birlikte tasarlandı.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 28px">
+        <dl style="margin: 0; display: grid; grid-template-columns: 96px minmax(0, 1fr); row-gap: 12px; font-size: 15px; padding-top: 20px; border-top: 1px solid #D9D7D0">
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Yıl</dt><dd style="margin: 0">2023</dd>
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Tür</dt><dd style="margin: 0">Lisans projesi</dd>
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Logo, renk sistemi, mockup</dd>
+        </dl>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 8px"><span style="height: 64px; background: #D7262E; display: block"></span><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4A4F5A">PANTONE P 48-16 C</span></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><span style="height: 64px; background: #1C1B1B; display: block"></span><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4A4F5A">P PROCESS BLACK C</span></div>
+        </div>
+      </div>
+    </section>
+    <figure style="margin: 0; flex: 1; min-width: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 40px; box-sizing: border-box">
+      <div class="lg-stage" role="img" aria-label="REDOX logo sistemi, animasyonlu" style="aspect-ratio: 1336 / 1449">
+        <img class="lg-mark" src="../assets/0f60d977bd6ba6ef69ae7dd0c416b2a4.jpg" alt="" style="left: 38.772%; top: 1.242%; width: 25.973%; height: 20.566%">
+        <img class="lg-word" src="../assets/2f7ef4c58b2d0495f5295e199b0cdce8.jpg" alt="" style="left: 26.647%; top: 27.26%; width: 50.674%; height: 7.177%">
+        <img class="lg-tile" src="../assets/eada0f9b14cf29bd40817da1d5fb2940.jpg" alt="" style="left: 1.347%; top: 39.268%; width: 32.036%; height: 30.711%">
+        <img class="lg-tile lg-d1" src="../assets/3375a714072dc8f444fded21e19fc22d.jpg" alt="" style="left: 33.982%; top: 39.268%; width: 32.036%; height: 30.711%">
+        <img class="lg-tile lg-d2" src="../assets/b8ff50a4c8d8b08a944317775adae4b3.jpg" alt="" style="left: 66.617%; top: 39.268%; width: 32.036%; height: 30.711%">
+        <img class="lg-bar" src="../assets/e5ea230c23395746da90d3e3f33612f6.jpg" alt="" style="left: 1.796%; top: 71.36%; width: 10.254%; height: 27.329%">
+        <img class="lg-bar lg-d1" src="../assets/281251b01b91c3b6ae5c65f3a2f812ac.jpg" alt="" style="left: 12.949%; top: 71.36%; width: 10.18%; height: 27.329%">
+        <img class="lg-band" src="../assets/901c6092e3df48a07c8430d8fdc3efae.jpg" alt="" style="left: 24.701%; top: 71.36%; width: 73.952%; height: 27.329%">
+      </div>
+    </figure>
+  </main>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

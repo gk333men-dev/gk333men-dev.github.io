@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>12 Nearkin · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1F6B4E}a:hover{color:#164D38}
+.nk-row{position:relative}
+.nk-row figure{position:relative;z-index:1}
+.nk-ping{position:absolute;left:50%;top:46%;width:220px;height:220px;margin:-110px 0 0 -110px;border-radius:50%;border:2px solid #1F6B4E;opacity:0;z-index:0;pointer-events:none;animation:nk-ping 4.5s cubic-bezier(.2,.6,.3,1) infinite}
+.nk-ping.d1{animation-delay:1.5s}.nk-ping.d2{animation-delay:3s}
+.nk-row figure{animation:nk-float 6s ease-in-out infinite}
+.nk-row figure:nth-of-type(2){animation-delay:-1.2s}.nk-row figure:nth-of-type(3){animation-delay:-2.4s}.nk-row figure:nth-of-type(4){animation-delay:-3.6s}.nk-row figure:nth-of-type(5){animation-delay:-4.8s}
+@keyframes nk-ping{0%{opacity:.55;transform:scale(.3)}100%{opacity:0;transform:scale(5.5)}}
+@keyframes nk-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion: reduce){.nk-ping,.nk-row figure{animation:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #F3EFE6; color: #1B2A22; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #56655C; padding-bottom: 18px; border-bottom: 1px solid #DCD5C6">
+    <span>01 — Mobil Uygulamalar · UI/UX</span>
+    <span>12</span>
+  </header>
+  <div style="display: grid; grid-template-columns: 96px minmax(0, 1.1fr) minmax(0, 1.3fr) 280px; gap: 40px; align-items: start">
+    <img src="../assets/589e62a588aa1949d870a8740ea008db.png" alt="Nearkin uygulama ikonu" style="width: 96px; height: 96px; border-radius: 22px; display: block">
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: -0.035em">Nearkin</h1>
+      <span style="font-size: 18px; color: #56655C">Aile Konum Paylaşımı · iOS</span>
+    </div>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2E3B34">Ailenin ve yakınlarının konumunu paylaşan, “eve vardı mı?” endişesini bitiren bir uygulama. Sıcak krem zemin, yeşil vurgular ve harita odaklı bir ana ekran; SOS gibi kritik anlar için kırmızı yalnızca o ana ayrıldı.</p>
+    <dl style="margin: 0; display: grid; grid-template-columns: 84px minmax(0, 1fr); row-gap: 10px; font-size: 15px">
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #56655C; padding-top: 2px">Yıl</dt><dd style="margin: 0">2026</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #56655C; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Onboarding, harita, SOS, paywall</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #56655C; padding-top: 2px">Renk</dt><dd style="margin: 0; display: flex; gap: 6px; align-items: center"><span style="width: 16px; height: 16px; background: #1F6B4E; display: inline-block"></span><span style="width: 16px; height: 16px; background: #F3EFE6; border: 1px solid #C9C1AF; display: inline-block"></span><span style="width: 16px; height: 16px; background: #D93A2B; display: inline-block"></span></dd>
+    </dl>
+  </div>
+  <div class="nk-row" style="flex: 1; min-height: 0; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px">
+    <span class="nk-ping" aria-hidden="true"></span>
+    <span class="nk-ping d1" aria-hidden="true"></span>
+    <span class="nk-ping d2" aria-hidden="true"></span>
+    <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/2197b0330d1f2f964a35d8d25ee3d050.jpg" alt="Nearkin onboarding" style="height: 510px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #56655C">Onboarding · Güvende vardı</figcaption>
+    </figure>
+    <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/33bf3dcd2f5b3cfaaee2c550b108f738.jpg" alt="Nearkin harita ekranı" style="height: 510px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #56655C">Harita</figcaption>
+    </figure>
+    <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/3a20ff7a21751ff7aa6b6298118ad74f.jpg" alt="Nearkin kişi detayı" style="height: 510px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #56655C">Kişi detayı · Günlük rota</figcaption>
+    </figure>
+    <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/a4bc40fa5cbdc10432592b1738d2fb1e.jpg" alt="Nearkin SOS onayı" style="height: 510px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B42318">SOS</figcaption>
+    </figure>
+    <figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/d66c4f8a87a37c5cf9c7cdae31d38ee0.jpg" alt="Nearkin paywall" style="height: 510px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #1F6B4E">Paywall</figcaption>
+    </figure>
+  </div>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

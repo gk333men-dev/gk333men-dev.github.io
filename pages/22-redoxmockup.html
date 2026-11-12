@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>22 REDOX Mockup · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FF6B6B}a:hover{color:#FF9B9B}
+.mk-stage{position:relative;overflow:hidden}
+.mk-img{animation:mk-kb 14s ease-in-out infinite alternate}
+.mk-sheen{position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 35%,rgba(255,70,70,.24) 50%,transparent 65%);background-size:250% 100%;mix-blend-mode:screen;animation:mk-sheen 4.5s ease-in-out infinite}
+@keyframes mk-kb{from{transform:scale(1) translateX(0)}to{transform:scale(1.07) translateX(-2%)}}
+@keyframes mk-sheen{0%{background-position:120% 0}60%,100%{background-position:-20% 0}}
+@media (prefers-reduced-motion: reduce){.mk-img,.mk-sheen{animation:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #15171C; color: #F4F4F6; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9AEB8; padding-bottom: 18px; border-bottom: 1px solid #2E323B">
+    <span>02 — Marka Kimliği · REDOX</span>
+    <span>22</span>
+  </header>
+  <main style="flex: 1; min-height: 0; display: flex; gap: 64px">
+    <section style="width: 300px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9AEB8">Uygulama</span>
+        <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 56px; line-height: 1; letter-spacing: -0.03em">REDOX‑PRO</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D5D8DE">Kimliğin bir kulaklık lansmanına uygulanışı: web bannerı, dikey reklam alanı ve ürünün gürültü engelleme, hızlı şarj ve yüksek ses özelliklerini anlatan ana görsel.</p>
+      </div>
+      <ul style="margin: 0; padding: 20px 0 0; list-style: none; border-top: 1px solid #2E323B; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #D5D8DE">
+        <li>Yatay banner</li>
+        <li>Dikey reklam alanı</li>
+        <li>Özellik anlatımlı ana görsel</li>
+      </ul>
+    </section>
+    <figure class="mk-stage" style="margin: 0; flex: 1; min-width: 0; display: flex; align-items: center; justify-content: center">
+      <span class="mk-sheen" aria-hidden="true"></span>
+      <img class="mk-img" src="../assets/be1803573a611d722b592e15eb9699e6.jpg" alt="REDOX-PRO kulaklık reklam mockupları" style="width: 100%; height: 100%; object-fit: contain; display: block">
+    </figure>
+  </main>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

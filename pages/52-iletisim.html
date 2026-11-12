@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>52 İletişim · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFC72C}a:hover{color:#FFE08A}
+@keyframes m-rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes m-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.m-grow{transform-origin:left center;animation:m-grow .8s cubic-bezier(.2,.7,.2,1) both}
+.m-rise{animation:m-rise .9s cubic-bezier(.2,.7,.2,1) both}
+.m-d1{animation-delay:.15s}.m-d2{animation-delay:.3s}.m-d3{animation-delay:.45s}
+@media (prefers-reduced-motion: reduce){.m-grow,.m-rise{animation:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 72px 80px 64px; background: #15171C; color: #FFFFFF; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden">
+  <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9AEB8">
+    <span>Gökmen Çevikbaş — Portfolyo</span>
+    <span>52</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 32px">
+    <span class="m-grow" style="display: block; width: 72px; height: 8px; background: #FFC72C"></span>
+    <h1 class="m-rise m-d1" style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 176px; line-height: 0.9; letter-spacing: -0.05em">Teşekkürler.</h1>
+    <p class="m-rise m-d2" style="margin: 0; max-width: 720px; font-size: 26px; line-height: 1.4; color: #C9CDD5">Yeni bir uygulama, kampanya ya da marka için birlikte çalışmaya açığım.</p>
+  </div>
+  <div class="m-rise m-d3" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; padding-top: 28px; border-top: 1px solid #2E323B">
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9AEB8">E‑posta</span>
+      <a href="mailto:gk333men@gmail.com" style="font-size: 19px; color: inherit; text-decoration: none">gk333men@gmail.com</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9AEB8">Telefon</span>
+      <a href="tel:+905427129236" style="font-size: 19px; color: inherit; text-decoration: none">0542 712 92 36</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9AEB8">Web</span>
+      <a href="https://gk333men-dev.github.io" target="_top" style="font-size: 19px; color: inherit; text-decoration: none">gk333men-dev.github.io</a>
+    </div>
+  </div>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

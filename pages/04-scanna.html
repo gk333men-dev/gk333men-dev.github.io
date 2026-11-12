@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>04 Scanna — Onboarding · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#34D27B}a:hover{color:#7BE6A8}
+.sc-fig{position:relative;animation:sc-float 6s ease-in-out infinite}
+.sc-fig:nth-child(2){animation-delay:-1.5s}.sc-fig:nth-child(3){animation-delay:-3s}.sc-fig:nth-child(4){animation-delay:-4.5s}
+.sc-scan{position:absolute;left:14px;right:14px;top:0;height:3px;border-radius:2px;background:#34D27B;box-shadow:0 0 18px 4px rgba(52,210,123,.55);opacity:0;pointer-events:none;animation:sc-scan 3.6s cubic-bezier(.45,0,.55,1) infinite}
+.sc-fig:nth-child(2) .sc-scan{animation-delay:.9s}.sc-fig:nth-child(3) .sc-scan{animation-delay:1.8s}.sc-fig:nth-child(4) .sc-scan{animation-delay:2.7s}
+@keyframes sc-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes sc-scan{0%{opacity:0;transform:translateY(60px)}12%,78%{opacity:1}92%,100%{opacity:0;transform:translateY(500px)}}
+@media (prefers-reduced-motion: reduce){.sc-fig,.sc-scan{animation:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #0C110F; color: #F2F5F3; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #9AA59F; padding-bottom: 18px; border-bottom: 1px solid #1F2A25">
+    <span>01 — Mobil Uygulamalar · UI/UX</span>
+    <span>04</span>
+  </header>
+  <div style="display: grid; grid-template-columns: 96px minmax(0, 1.1fr) minmax(0, 1.3fr) 280px; gap: 40px; align-items: start">
+    <img src="../assets/8b2f839df12c43dcb4aea4be8474b6ad.png" alt="Scanna uygulama ikonu" style="width: 96px; height: 96px; border-radius: 22px; display: block">
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: -0.035em">Scanna</h1>
+      <span style="font-size: 18px; color: #9AA59F">QR &amp; Barkod Tarayıcı · iOS</span>
+    </div>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D3DAD6">Taranan her bağlantıyı açılmadan önce güvenlik kontrolünden geçiren ve markalı QR kod üretmeye imkân veren uygulama. Onboarding’de üç ana değeri tek tek anlatan, yeşil vurgu rengiyle güven hissi veren karanlık bir arayüz kurguladım.</p>
+    <dl style="margin: 0; display: grid; grid-template-columns: 84px minmax(0, 1fr); row-gap: 10px; font-size: 15px">
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #9AA59F; padding-top: 2px">Yıl</dt><dd style="margin: 0">2026</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #9AA59F; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Onboarding, paywall</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #9AA59F; padding-top: 2px">Renk</dt><dd style="margin: 0; display: flex; gap: 6px; align-items: center"><span style="width: 16px; height: 16px; background: #34D27B; display: inline-block"></span><span style="width: 16px; height: 16px; background: #0C110F; border: 1px solid #3A4842; display: inline-block"></span><span style="width: 16px; height: 16px; background: #FFFFFF; display: inline-block"></span></dd>
+    </dl>
+  </div>
+  <div style="flex: 1; min-height: 0; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px">
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/c331bcdd02db5df2dc292411796da019.jpg" alt="Onboarding 1: Tara ve oluştur" style="height: 560px; width: auto; border-radius: 34px; border: 1px solid #26302B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA59F">01 · Tara ve oluştur</figcaption>
+    </figure>
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/af1ceedd6859e72f1ac75fa91c2f46b6.jpg" alt="Onboarding 2: Güvenli tarama" style="height: 560px; width: auto; border-radius: 34px; border: 1px solid #26302B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA59F">02 · Güvenli mi, bil</figcaption>
+    </figure>
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/73831eca0e5a99486141f611b5fc2cbb.jpg" alt="Onboarding 3: Markalı kod oluştur" style="height: 560px; width: auto; border-radius: 34px; border: 1px solid #26302B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA59F">03 · Markana özel kod</figcaption>
+    </figure>
+    <figure class="sc-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/cd55b21db8c6594bf938187261c9d4d4.jpg" alt="Paywall ekranı" style="height: 560px; width: auto; border-radius: 34px; border: 1px solid #34D27B; display: block">
+      <span class="sc-scan" aria-hidden="true"></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #34D27B">04 · Paywall</figcaption>
+    </figure>
+  </div>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

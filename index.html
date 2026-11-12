@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gökmen Çevikbaş · Portfolyo</title>
+<meta name="description" content="Gökmen Çevikbaş — grafik tasarımcı. Mobil arayüzler, reklam kreatifleri, marka kimlikleri ve AI video çalışmaları.">
+<meta property="og:title" content="Gökmen Çevikbaş · Portfolyo">
+<meta property="og:description" content="Mobil arayüzler, reklam kreatifleri, marka kimlikleri ve AI video çalışmaları.">
+<meta name="theme-color" content="#0E0F12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FFC72C'/%3E%3Ctext x='16' y='22.5' font-family='Arial,sans-serif' font-weight='700' font-size='17' text-anchor='middle' fill='%2315171C'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root { --bg: #0E0F12; --fg: #EEF0F3; --mute: #8B909C; --line: #23262E; --acc: #FFC72C; --gut: 40px; --s: 1; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.top { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 28px; height: 60px; padding: 0 var(--gut); background: rgba(14,15,18,.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: -.01em; white-space: nowrap; }
+.brand i { width: 10px; height: 10px; border-radius: 50%; background: var(--acc); }
+nav { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+nav::-webkit-scrollbar { display: none; }
+nav a { text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--mute); padding: 8px 12px; border-radius: 999px; white-space: nowrap; transition: color .2s, background .2s; }
+nav a:hover, nav a.on { color: var(--fg); background: #1C1F26; }
+nav a.on { color: var(--acc); }
+main { max-width: 1520px; margin: 0 auto; padding: 32px var(--gut) 40px; }
+.sec { scroll-margin-top: 76px; }
+.sec + .sec { margin-top: 72px; }
+.sec-h { display: flex; align-items: baseline; gap: 16px; margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.sec-h .idx { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--acc); }
+.sec-h h2 { margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: clamp(22px, 3vw, 34px); letter-spacing: -.02em; line-height: 1.1; }
+.sec-h .cnt { margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--mute); white-space: nowrap; }
+.pg { margin: 0; scroll-margin-top: 76px; }
+.pg + .pg { margin-top: 36px; }
+.frame { position: relative; width: 100%; aspect-ratio: 1440 / 1018; overflow: hidden; border-radius: 12px; background: #000; box-shadow: 0 0 0 1px var(--line); }
+.frame iframe { position: absolute; left: 0; top: 0; width: 1440px; height: 1018px; border: 0; transform: scale(var(--s)); transform-origin: 0 0; display: block; }
+figcaption { display: flex; align-items: center; gap: 12px; padding: 12px 2px 0; font-size: 14px; color: var(--mute); }
+figcaption .num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--fg); }
+figcaption .nm { color: var(--fg); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+figcaption .vid { display: inline-flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--acc); white-space: nowrap; }
+figcaption .open { margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 12px; text-decoration: none; white-space: nowrap; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line); }
+figcaption .open:hover { border-color: var(--acc); color: var(--acc); }
+footer { max-width: 1520px; margin: 0 auto; padding: 28px var(--gut) 48px; display: flex; justify-content: space-between; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--mute); border-top: 1px solid var(--line); }
+@media (max-width: 760px) {
+  :root { --gut: 16px; }
+  .top { gap: 14px; height: 54px; }
+  .brand span { display: none; }
+  main { padding-top: 20px; }
+  .sec + .sec { margin-top: 48px; }
+  .pg + .pg { margin-top: 24px; }
+  .frame { border-radius: 8px; }
+  figcaption .vid { display: none; }
+  footer { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+#fs { position: fixed; inset: 0; z-index: 50; background: #000; }
+#fs[hidden] { display: none; }
+#fs iframe { position: absolute; left: 0; top: 0; width: 1440px; height: 1018px; border: 0; transform-origin: 0 0; }
+#fsx { position: absolute; right: 14px; top: max(14px, env(safe-area-inset-top)); z-index: 2; width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(255,255,255,.25); background: rgba(20,22,28,.75); color: #fff; font-size: 18px; cursor: pointer; }
+#fshint { position: absolute; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 2; padding: 9px 14px; border-radius: 999px; background: rgba(20,22,28,.85); color: #F4F4F6; font: 500 13px Inter, sans-serif; white-space: nowrap; transition: opacity .6s; pointer-events: none; }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#giris"><i></i>Gökmen Çevikbaş<span style="color: var(--mute); font-weight: 500">&nbsp;· Portfolyo</span></a>
+  <nav aria-label="Bölümler"><a href="#uygulamalar">Uygulamalar</a><a href="#marka">Marka</a><a href="#editoryal">Editoryal</a><a href="#ai">AI Video</a><a href="#iletisim">İletişim</a></nav>
+</header>
+<main>
+    <section class="sec" id="giris" aria-label="Giriş">
+      <figure class="pg" id="p01">
+        <div class="frame"><iframe src="pages/01-main.html" title="01 Kapak" loading="eager" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">01</span><span class="nm">Kapak</span><a class="open" href="pages/01-main.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p02">
+        <div class="frame"><iframe src="pages/02-hakkimda.html" title="02 Hakkımda" loading="eager" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">02</span><span class="nm">Hakkımda</span><a class="open" href="pages/02-hakkimda.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p03">
+        <div class="frame"><iframe src="pages/03-icindekiler.html" title="03 İçindekiler" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">03</span><span class="nm">İçindekiler</span><a class="open" href="pages/03-icindekiler.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+    </section>
+    <section class="sec" id="uygulamalar" aria-label="Mobil Uygulamalar · UI/UX &amp; Reklam Kreatifleri">
+      <header class="sec-h"><span class="idx">01</span><h2>Mobil Uygulamalar · UI/UX &amp; Reklam Kreatifleri</h2><span class="cnt">17 sayfa</span></header>
+      <figure class="pg" id="p04">
+        <div class="frame"><iframe src="pages/04-scanna.html" title="04 Scanna — Onboarding" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">04</span><span class="nm">Scanna — Onboarding</span><a class="open" href="pages/04-scanna.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p05">
+        <div class="frame"><iframe src="pages/05-scanna2.html" title="05 Scanna — Akışlar" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">05</span><span class="nm">Scanna — Akışlar</span><a class="open" href="pages/05-scanna2.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p06">
+        <div class="frame"><iframe src="pages/06-scannakreatif.html" title="06 Scanna Kreatifleri" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">06</span><span class="nm">Scanna Kreatifleri</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/06-scannakreatif.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p07">
+        <div class="frame"><iframe src="pages/07-holyfeed.html" title="07 HolyFeed" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">07</span><span class="nm">HolyFeed</span><a class="open" href="pages/07-holyfeed.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p08">
+        <div class="frame"><iframe src="pages/08-dime.html" title="08 Dime" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">08</span><span class="nm">Dime</span><a class="open" href="pages/08-dime.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p09">
+        <div class="frame"><iframe src="pages/09-dimekreatif.html" title="09 Dime Kreatifleri" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">09</span><span class="nm">Dime Kreatifleri</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/09-dimekreatif.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p10">
+        <div class="frame"><iframe src="pages/10-faxly.html" title="10 Faxly" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">10</span><span class="nm">Faxly</span><a class="open" href="pages/10-faxly.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p11">
+        <div class="frame"><iframe src="pages/11-faxlykreatif.html" title="11 Faxly Kreatifleri" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">11</span><span class="nm">Faxly Kreatifleri</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/11-faxlykreatif.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p12">
+        <div class="frame"><iframe src="pages/12-nearkin.html" title="12 Nearkin" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">12</span><span class="nm">Nearkin</span><a class="open" href="pages/12-nearkin.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p13">
+        <div class="frame"><iframe src="pages/13-nearkinkreatif.html" title="13 Nearkin Kreatifleri" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">13</span><span class="nm">Nearkin Kreatifleri</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/13-nearkinkreatif.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p14">
+        <div class="frame"><iframe src="pages/14-capling.html" title="14 Capling" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">14</span><span class="nm">Capling</span><a class="open" href="pages/14-capling.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p15">
+        <div class="frame"><iframe src="pages/15-aerolens.html" title="15 Flightsy" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">15</span><span class="nm">Flightsy</span><a class="open" href="pages/15-aerolens.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p16">
+        <div class="frame"><iframe src="pages/16-flightsykreatif.html" title="16 Flightsy Kreatifleri" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">16</span><span class="nm">Flightsy Kreatifleri</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/16-flightsykreatif.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p17">
+        <div class="frame"><iframe src="pages/17-keel.html" title="17 Keel" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">17</span><span class="nm">Keel</span><a class="open" href="pages/17-keel.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p18">
+        <div class="frame"><iframe src="pages/18-keelkreatif.html" title="18 Keel Kreatifleri" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">18</span><span class="nm">Keel Kreatifleri</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/18-keelkreatif.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p19">
+        <div class="frame"><iframe src="pages/19-translio.html" title="19 Translio AI" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">19</span><span class="nm">Translio AI</span><a class="open" href="pages/19-translio.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p20">
+        <div class="frame"><iframe src="pages/20-transliokreatif.html" title="20 Translio Kreatifleri" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">20</span><span class="nm">Translio Kreatifleri</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/20-transliokreatif.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+    </section>
+    <section class="sec" id="marka" aria-label="Marka Kimliği">
+      <header class="sec-h"><span class="idx">02</span><h2>Marka Kimliği</h2><span class="cnt">14 sayfa</span></header>
+      <figure class="pg" id="p21">
+        <div class="frame"><iframe src="pages/21-redox.html" title="21 REDOX" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">21</span><span class="nm">REDOX</span><a class="open" href="pages/21-redox.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p22">
+        <div class="frame"><iframe src="pages/22-redoxmockup.html" title="22 REDOX Mockup" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">22</span><span class="nm">REDOX Mockup</span><a class="open" href="pages/22-redoxmockup.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p23">
+        <div class="frame"><iframe src="pages/23-nova.html" title="23 NOVA" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">23</span><span class="nm">NOVA</span><a class="open" href="pages/23-nova.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p24">
+        <div class="frame"><iframe src="pages/24-novamockup.html" title="24 NOVA Mockup" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">24</span><span class="nm">NOVA Mockup</span><a class="open" href="pages/24-novamockup.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p25">
+        <div class="frame"><iframe src="pages/25-sentytech.html" title="25 SentyTech" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">25</span><span class="nm">SentyTech</span><a class="open" href="pages/25-sentytech.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p26">
+        <div class="frame"><iframe src="pages/26-zero.html" title="26 ZERO" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">26</span><span class="nm">ZERO</span><a class="open" href="pages/26-zero.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p27">
+        <div class="frame"><iframe src="pages/27-marscafe.html" title="27 Mars Cafe" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">27</span><span class="nm">Mars Cafe</span><a class="open" href="pages/27-marscafe.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p28">
+        <div class="frame"><iframe src="pages/28-vetlaz.html" title="28 Vetlaz" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">28</span><span class="nm">Vetlaz</span><a class="open" href="pages/28-vetlaz.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p29">
+        <div class="frame"><iframe src="pages/29-novaspor.html" title="29 Nova Spor" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">29</span><span class="nm">Nova Spor</span><a class="open" href="pages/29-novaspor.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p30">
+        <div class="frame"><iframe src="pages/30-novasporpost.html" title="30 Nova Spor Post" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">30</span><span class="nm">Nova Spor Post</span><a class="open" href="pages/30-novasporpost.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p31">
+        <div class="frame"><iframe src="pages/31-santos.html" title="31 Santos" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">31</span><span class="nm">Santos</span><a class="open" href="pages/31-santos.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p32">
+        <div class="frame"><iframe src="pages/32-appikonlari.html" title="32 App İkonları" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">32</span><span class="nm">App İkonları</span><a class="open" href="pages/32-appikonlari.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p33">
+        <div class="frame"><iframe src="pages/33-forma.html" title="33 Gold Collection" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">33</span><span class="nm">Gold Collection</span><a class="open" href="pages/33-forma.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p34">
+        <div class="frame"><iframe src="pages/34-formakampanya.html" title="34 Gold Collection Lansman" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">34</span><span class="nm">Gold Collection Lansman</span><a class="open" href="pages/34-formakampanya.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+    </section>
+    <section class="sec" id="editoryal" aria-label="Editoryal Tasarım &amp; İnfografik">
+      <header class="sec-h"><span class="idx">03</span><h2>Editoryal Tasarım &amp; İnfografik</h2><span class="cnt">3 sayfa</span></header>
+      <figure class="pg" id="p35">
+        <div class="frame"><iframe src="pages/35-dergi.html" title="35 LEVEL Kapak" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">35</span><span class="nm">LEVEL Kapak</span><a class="open" href="pages/35-dergi.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p36">
+        <div class="frame"><iframe src="pages/36-dergiic.html" title="36 LEVEL İç Sayfa" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">36</span><span class="nm">LEVEL İç Sayfa</span><a class="open" href="pages/36-dergiic.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p37">
+        <div class="frame"><iframe src="pages/37-infografi.html" title="37 İnfografik" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">37</span><span class="nm">İnfografik</span><a class="open" href="pages/37-infografi.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+    </section>
+    <section class="sec" id="ai" aria-label="AI Video &amp; VFX">
+      <header class="sec-h"><span class="idx">04</span><h2>AI Video &amp; VFX</h2><span class="cnt">14 sayfa</span></header>
+      <figure class="pg" id="p38">
+        <div class="frame"><iframe src="pages/38-aisparta.html" title="38 AI Video — Sparta" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">38</span><span class="nm">AI Video — Sparta</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/38-aisparta.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p39">
+        <div class="frame"><iframe src="pages/39-aispartadev.html" title="39 AI Video — Sparta tasarım" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">39</span><span class="nm">AI Video — Sparta tasarım</span><a class="open" href="pages/39-aispartadev.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p40">
+        <div class="frame"><iframe src="pages/40-aivideo.html" title="40 AI Video — Transformers" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">40</span><span class="nm">AI Video — Transformers</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/40-aivideo.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p41">
+        <div class="frame"><iframe src="pages/41-aivideo2.html" title="41 AI Video — Süreç" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">41</span><span class="nm">AI Video — Süreç</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/41-aivideo2.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p42">
+        <div class="frame"><iframe src="pages/42-aiduel.html" title="42 AI Video — Düello" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">42</span><span class="nm">AI Video — Düello</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/42-aiduel.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p43">
+        <div class="frame"><iframe src="pages/43-aigod.html" title="43 AI Video — Fallen God" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">43</span><span class="nm">AI Video — Fallen God</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/43-aigod.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p44">
+        <div class="frame"><iframe src="pages/44-aigoddev.html" title="44 AI Video — Görsel geliştirme" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">44</span><span class="nm">AI Video — Görsel geliştirme</span><a class="open" href="pages/44-aigoddev.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p45">
+        <div class="frame"><iframe src="pages/45-aidoom.html" title="45 AI Video — Doom" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">45</span><span class="nm">AI Video — Doom</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/45-aidoom.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p46">
+        <div class="frame"><iframe src="pages/46-aidoom3d.html" title="46 AI Video — Doom 3B / AI" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">46</span><span class="nm">AI Video — Doom 3B / AI</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/46-aidoom3d.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p47">
+        <div class="frame"><iframe src="pages/47-aistriker.html" title="47 AI Video — Nova Striker" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">47</span><span class="nm">AI Video — Nova Striker</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/47-aistriker.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p48">
+        <div class="frame"><iframe src="pages/48-aisurfer.html" title="48 AI Video — Cosmic Surfer" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">48</span><span class="nm">AI Video — Cosmic Surfer</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/48-aisurfer.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p49">
+        <div class="frame"><iframe src="pages/49-aisurferdev.html" title="49 AI Video — Cosmic Surfer süreç" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">49</span><span class="nm">AI Video — Cosmic Surfer süreç</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/49-aisurferdev.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p50">
+        <div class="frame"><iframe src="pages/50-aimostwanted.html" title="50 AI Video — Most Wanted" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">50</span><span class="nm">AI Video — Most Wanted</span><span class="vid"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>Videoya tıkla · sesli izle</span><a class="open" href="pages/50-aimostwanted.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+      <figure class="pg" id="p51">
+        <div class="frame"><iframe src="pages/51-aimostwanteddev.html" title="51 AI Video — Most Wanted tasarım" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">51</span><span class="nm">AI Video — Most Wanted tasarım</span><a class="open" href="pages/51-aimostwanteddev.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+    </section>
+    <section class="sec" id="iletisim" aria-label="İletişim">
+      <figure class="pg" id="p52">
+        <div class="frame"><iframe src="pages/52-iletisim.html" title="52 İletişim" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <figcaption><span class="num">52</span><span class="nm">İletişim</span><a class="open" href="pages/52-iletisim.html" >Tam ekran ⤢</a></figcaption>
+      </figure>
+    </section>
+</main>
+<div id="fs" hidden><button id="fsx" type="button" aria-label="Tam ekranı kapat">✕</button><div id="fshint">Daha büyük görmek için telefonu yan çevir</div></div>
+<footer><span>© 2026 Gökmen Çevikbaş</span><span>Grafik tasarım · UI/UX · Kimlik · AI video</span></footer>
+<script>
+(function () {
+  var first = document.querySelector('.frame');
+  function scale() { document.documentElement.style.setProperty('--s', first.clientWidth / 1440); }
+  if ('ResizeObserver' in window) new ResizeObserver(scale).observe(first); else window.addEventListener('resize', scale);
+  scale();
+  if (location.hash.length > 1) { var tgt = document.getElementById(location.hash.slice(1)); if (tgt) setTimeout(function () { tgt.scrollIntoView({ behavior: 'auto' }); }, 60); }
+  var fs = document.getElementById('fs'), fsHint = document.getElementById('fshint'), cur = null, wasFull = false;
+  function fit() { if (!cur) return; var W = window.innerWidth, H = window.innerHeight, s = Math.min(W / 1440, H / 1018); cur.style.transform = 'translate(' + (W - 1440 * s) / 2 + 'px,' + (H - 1018 * s) / 2 + 'px) scale(' + s + ')'; fsHint.style.display = (W < H && W < 820) ? '' : 'none'; }
+  function openFs(src) {
+    cur = document.createElement('iframe'); cur.src = src; cur.setAttribute('allow', 'autoplay; fullscreen'); fs.appendChild(cur);
+    fs.hidden = false; document.body.style.overflow = 'hidden'; fsHint.style.opacity = '1'; fit();
+    setTimeout(function () { fsHint.style.opacity = '0'; }, 3500);
+    var rq = fs.requestFullscreen || fs.webkitRequestFullscreen;
+    if (rq) { try { var p = rq.call(fs); if (p && p.then) p.then(function () { wasFull = true; try { screen.orientation.lock('landscape').catch(function () {}); } catch (e) {} }).catch(function () {}); } catch (e) {} }
+  }
+  function closeFs() {
+    if (cur) { cur.src = 'about:blank'; cur.remove(); cur = null; }
+    fs.hidden = true; document.body.style.overflow = '';
+    try { screen.orientation.unlock(); } catch (e) {}
+    if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(function () {});
+    wasFull = false;
+  }
+  document.querySelectorAll('a.open').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); openFs(a.getAttribute('href')); }); });
+  document.getElementById('fsx').addEventListener('click', closeFs);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !fs.hidden) closeFs(); });
+  document.addEventListener('fullscreenchange', function () { if (!document.fullscreenElement && wasFull && !fs.hidden) closeFs(); });
+  window.addEventListener('resize', fit);
+  if (window.innerWidth < 820 && 'IntersectionObserver' in window) {
+    var keep = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var f = e.target;
+        if (e.isIntersecting) { if (f.dataset.src) { f.setAttribute('src', f.dataset.src); delete f.dataset.src; } }
+        else if (!f.dataset.src) { f.dataset.src = f.getAttribute('src'); f.setAttribute('src', 'about:blank'); }
+      });
+    }, { rootMargin: '150% 0px' });
+    document.querySelectorAll('.frame iframe').forEach(function (f) { keep.observe(f); });
+  }
+  var links = {};
+  document.querySelectorAll('nav a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        Object.keys(links).forEach(function (k) { links[k].classList.toggle('on', k === e.target.id); });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('.sec').forEach(function (s) { io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>

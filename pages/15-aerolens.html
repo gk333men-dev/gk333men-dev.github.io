@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>15 Flightsy · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#60A5FA}a:hover{color:#93C5FD}
+.ae-route{position:relative;height:28px}
+.ae-route::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:2px dashed rgba(96,165,250,.35)}
+.ae-plane{position:absolute;top:50%;left:0;width:28px;height:28px;margin-top:-14px;color:#60A5FA;animation:ae-fly 7s linear infinite}
+.ae-plane svg{display:block;width:28px;height:28px;transform:rotate(45deg)}
+.ae-fig{animation:ae-float 6s ease-in-out infinite}
+.ae-fig:nth-child(2){animation-delay:-1.2s}.ae-fig:nth-child(3){animation-delay:-2.4s}.ae-fig:nth-child(4){animation-delay:-3.6s}.ae-fig:nth-child(5){animation-delay:-4.8s}
+@keyframes ae-fly{0%{left:-3%;opacity:0;transform:translateY(0)}6%{opacity:1}25%{transform:translateY(-6px)}50%{transform:translateY(0)}75%{transform:translateY(-6px)}94%{opacity:1}100%{left:100%;opacity:0;transform:translateY(0)}}
+@keyframes ae-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion: reduce){.ae-plane,.ae-fig{animation:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #0B1220; color: #EEF3FB; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 28px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #9AA8BF; padding-bottom: 18px; border-bottom: 1px solid #1E2A40">
+    <span>01 — Mobil Uygulamalar · UI/UX</span>
+    <span>15</span>
+  </header>
+  <div style="display: grid; grid-template-columns: 96px minmax(0, 1.1fr) minmax(0, 1.3fr) 280px; gap: 40px; align-items: start">
+    <img src="../assets/94e73a74ba0a3346f4266067b9becf0e.png" alt="Flightsy uygulama ikonu" style="width: 96px; height: 96px; border-radius: 22px; display: block">
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: -0.035em">Flightsy</h1>
+      <span style="font-size: 18px; color: #9AA8BF">Uçuş Takibi · iOS</span>
+    </div>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #CFD8E6">Herhangi bir uçuşu canlı haritada takip eden, rötarları önceden haber veren ve yolcu haklarını hatırlatan uygulama. Uydu haritası üzerinde koyu bir arayüz, mavi vurgu rengi ve bilgi yoğun ama okunaklı uçuş kartları.</p>
+    <dl style="margin: 0; display: grid; grid-template-columns: 84px minmax(0, 1fr); row-gap: 10px; font-size: 15px">
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #9AA8BF; padding-top: 2px">Yıl</dt><dd style="margin: 0">2026</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #9AA8BF; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Onboarding, harita, uçuş detayı, paywall</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #9AA8BF; padding-top: 2px">Renk</dt><dd style="margin: 0; display: flex; gap: 6px; align-items: center"><span style="width: 16px; height: 16px; background: #3B82F6; display: inline-block"></span><span style="width: 16px; height: 16px; background: #0B1220; border: 1px solid #33415C; display: inline-block"></span><span style="width: 16px; height: 16px; background: #F59E0B; display: inline-block"></span></dd>
+    </dl>
+  </div>
+  <div class="ae-route" aria-hidden="true">
+    <span class="ae-plane"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg></span>
+  </div>
+  <div style="flex: 1; min-height: 0; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px">
+    <figure class="ae-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/e05bfd1c0b4f2109fd30457b04c8e55d.jpg" alt="Flightsy onboarding: her uçuşu takip et" style="height: 490px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA8BF">Onboarding · Rötar uyarısı</figcaption>
+    </figure>
+    <figure class="ae-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/4d949b14b5b5ff453a635c8446157689.jpg" alt="Flightsy canlı uçuş haritası" style="height: 490px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA8BF">Canlı harita</figcaption>
+    </figure>
+    <figure class="ae-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/47e9cd098606a49aab679f58f570ecf5.jpg" alt="Flightsy uçuş detayı" style="height: 490px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA8BF">Uçuş detayı</figcaption>
+    </figure>
+    <figure class="ae-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/1a7416eb545fc29d9863a1505ce8b22e.jpg" alt="Flightsy uçuşlarım listesi" style="height: 490px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA8BF">Uçuşlarım</figcaption>
+    </figure>
+    <figure class="ae-fig" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="../assets/06e9dd08d40ac0cb13fb50d8f2b85e87.jpg" alt="Flightsy paywall" style="height: 490px; width: auto; border-radius: 34px; display: block">
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #60A5FA">Paywall</figcaption>
+    </figure>
+  </div>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

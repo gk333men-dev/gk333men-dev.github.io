@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>27 Mars Cafe · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#15171C}a:hover{color:#5E6470}
+.lg-stage{position:relative;height:100%;max-width:100%;overflow:hidden;perspective:1400px}
+.lg-stage img{position:absolute;display:block;mix-blend-mode:multiply;will-change:transform,opacity}
+.lg-mark{animation:mc-drop 9s linear infinite,mc-float 3.2s ease-in-out infinite alternate}
+.lg-word{animation:mc-word 9s cubic-bezier(.16,1,.3,1) infinite}
+.lg-tile{animation:mc-tile 9s linear infinite}
+.lg-tile.lg-d1{animation-delay:.1s}.lg-tile.lg-d2{animation-delay:.2s}
+.lg-bar{transform-origin:50% 0;animation:mc-pour 9s cubic-bezier(.65,0,.35,1) infinite}
+.lg-bar.lg-d1{animation-delay:.15s}
+.lg-band{animation:mc-band 9s cubic-bezier(.16,1,.3,1) infinite}
+.lg-still img{animation:none !important}
+@keyframes mc-drop{0%,46%{opacity:1;transform:none}52%{opacity:0;transform:translateY(60px) scale(.8)}53%{opacity:0;transform:translateY(-260px)}54%{opacity:1;transform:translateY(-260px);animation-timing-function:cubic-bezier(.5,0,1,.5)}62%{transform:translateY(0) scale(1.12,.86);animation-timing-function:cubic-bezier(0,.5,.5,1)}66%{transform:translateY(-36px) scale(.96,1.04);animation-timing-function:cubic-bezier(.5,0,1,.5)}70%{transform:translateY(0) scale(1.05,.95)}73%,100%{opacity:1;transform:none}}
+@keyframes mc-float{from{translate:0 0}to{translate:0 -8px}}
+@keyframes mc-word{0%,46%{opacity:1;transform:none}52%,60%{opacity:0;transform:rotate(-10deg) scale(.5)}70%{opacity:1;transform:rotate(4deg) scale(1.06)}75%,100%{opacity:1;transform:none}}
+@keyframes mc-tile{0%,46%{opacity:1;transform:none}52%{opacity:0;transform:translateY(40px)}53%,60%{opacity:0;transform:translateY(-160px)}61%{opacity:1;transform:translateY(-160px);animation-timing-function:cubic-bezier(.5,0,1,.5)}68%{transform:translateY(0) scale(1.04,.94);animation-timing-function:cubic-bezier(0,.5,.5,1)}72%{transform:translateY(-14px);animation-timing-function:cubic-bezier(.5,0,1,.5)}75%{transform:translateY(0)}78%,100%{opacity:1;transform:none}}
+@keyframes mc-pour{0%,46%{transform:none}52%,64%{transform:scaleY(0)}76%,100%{transform:none}}
+@keyframes mc-band{0%,46%{clip-path:inset(0 0 0 0)}52%,66%{clip-path:inset(100% 0 0 0)}80%,100%{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion: reduce){.lg-stage img{animation:none !important}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #F3F2EE; color: #15171C; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470; padding-bottom: 18px; border-bottom: 1px solid #D9D7D0">
+    <span>02 — Marka Kimliği</span>
+    <span>27</span>
+  </header>
+  <main style="flex: 1; min-height: 0; display: flex; gap: 64px">
+    <section style="width: 360px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470">Kafe Markası</span>
+        <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 80px; line-height: 0.95; letter-spacing: -0.04em">Mars Cafe</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2A2D35">Bir çikolata tabletinin karelerinden türetilen amblem ve el yazısı hissi veren logotip. Kahve ve kakao tonlarındaki palet, sıcak ve samimi bir kafe atmosferi yaratıyor.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 28px">
+        <dl style="margin: 0; display: grid; grid-template-columns: 96px minmax(0, 1fr); row-gap: 12px; font-size: 15px; padding-top: 20px; border-top: 1px solid #D9D7D0">
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Yıl</dt><dd style="margin: 0">2023</dd>
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Tür</dt><dd style="margin: 0">Lisans projesi</dd>
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Logo, renk sistemi</dd>
+        </dl>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 8px"><span style="height: 64px; background: #6C390F; display: block"></span><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4A4F5A">#6C390F</span></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><span style="height: 64px; background: #9C5414; display: block"></span><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4A4F5A">PANTONE P 26‑8 C</span></div>
+        </div>
+      </div>
+    </section>
+    <figure style="margin: 0; flex: 1; min-width: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 40px; box-sizing: border-box">
+      <div class="lg-stage" role="img" aria-label="Mars Cafe logo sistemi, animasyonlu" style="aspect-ratio: 1335 / 1483">
+        <img class="lg-mark" src="../assets/ca02de0c5c0d9abccbd6b811ce96ab56.jpg" alt="" style="left: 32.285%; top: 1.214%; width: 39.775%; height: 21.848%">
+        <img class="lg-word" src="../assets/44ba2d2d7ad07ecec189496d68daf22e.jpg" alt="" style="left: 32.734%; top: 24.477%; width: 36.479%; height: 13.958%">
+        <img class="lg-tile" src="../assets/c0ebbbf573592a8980c2e8be8af4c968.jpg" alt="" style="left: 1.348%; top: 40.728%; width: 32.06%; height: 30.209%">
+        <img class="lg-tile lg-d1" src="../assets/c7b79c3b13da16b6912bb20a862421ff.jpg" alt="" style="left: 34.082%; top: 40.728%; width: 32.06%; height: 30.209%">
+        <img class="lg-tile lg-d2" src="../assets/04bd12557c315d53a11b4718ba85857f.jpg" alt="" style="left: 66.517%; top: 40.728%; width: 32.06%; height: 30.209%">
+        <img class="lg-bar" src="../assets/52610eb4ddba685d948e15315f51a3f8.jpg" alt="" style="left: 1.648%; top: 72.084%; width: 10.337%; height: 26.703%">
+        <img class="lg-bar lg-d1" src="../assets/e0873bab19268eb9d0394866c15fe60c.jpg" alt="" style="left: 12.21%; top: 72.084%; width: 10.262%; height: 26.703%">
+        <img class="lg-band" src="../assets/dbc37420f47412b9ada046d65b19dad6.jpg" alt="" style="left: 23.221%; top: 72.084%; width: 75.356%; height: 26.703%">
+      </div>
+    </figure>
+  </main>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

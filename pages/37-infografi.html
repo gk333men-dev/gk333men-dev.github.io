@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>37 İnfografik · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#15171C}a:hover{color:#5E6470}
+.if-read{animation:if-read 10s cubic-bezier(.65,0,.35,1) infinite}
+.if-late{animation-delay:.6s}
+@keyframes if-read{0%,62%{clip-path:inset(0 0 0 0)}70%,72%{clip-path:inset(0 0 100% 0)}95%,100%{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion: reduce){.if-read{animation:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #F3F2EE; color: #15171C; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470; padding-bottom: 18px; border-bottom: 1px solid #D9D7D0">
+    <span>03 — İnfografik</span>
+    <span>37</span>
+  </header>
+  <main style="flex: 1; min-height: 0; display: flex; gap: 64px">
+    <section style="width: 300px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470">Bilgi grafiği</span>
+        <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 64px; line-height: 1; letter-spacing: -0.035em">Terepod</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2A2D35">Tyrannosaurus Rex ve Velociraptor’u boyut, kafatası, diş yapısı ve hız verileriyle karşılaştıran iki parçalı infografik. Turuncu siluetler ve ölçek ikonları, karmaşık bilgiyi bir bakışta okunur kılıyor.</p>
+      </div>
+      <dl style="margin: 0; display: grid; grid-template-columns: 96px minmax(0, 1fr); row-gap: 12px; font-size: 15px; padding-top: 20px; border-top: 1px solid #D9D7D0">
+        <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Yıl</dt><dd style="margin: 0">2024</dd>
+        <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Tür</dt><dd style="margin: 0">Lisans projesi</dd>
+        <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Poster, ikon seti</dd>
+      </dl>
+    </section>
+    <div style="flex: 1; min-width: 0; display: flex; gap: 32px; align-items: flex-start; justify-content: center; background: #E7E5DF; padding: 40px; box-sizing: border-box">
+      <img class="if-read" src="../assets/2271e1473f9acedb0e6e997e22eb1aaa.jpg" alt="T-Rex infografiği" style="height: 100%; width: auto; max-width: 46%; object-fit: contain; display: block; box-shadow: 0 20px 40px rgba(21,23,28,0.2)">
+      <img class="if-read if-late" src="../assets/7b5e6d858395aade042fa53277073c30.jpg" alt="Velociraptor infografiği" style="width: 50%; height: auto; max-height: 100%; object-fit: contain; display: block; box-shadow: 0 20px 40px rgba(21,23,28,0.2)">
+    </div>
+  </main>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

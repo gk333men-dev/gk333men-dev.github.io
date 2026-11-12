@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 Faxly · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FF7A3D}a:hover{color:#FFA57D}
+.fx-fig{animation:fx-feed 5s cubic-bezier(.65,0,.35,1) infinite}
+.fx-fig:nth-child(2){animation-delay:.25s}.fx-fig:nth-child(3){animation-delay:.5s}.fx-fig:nth-child(4){animation-delay:.75s}.fx-fig:nth-child(5){animation-delay:1s}
+.fx-bar{display:block;height:3px;background:#2A3150;border-radius:2px;overflow:hidden}
+.fx-bar span{display:block;height:100%;width:100%;background:#FF6A2B;transform-origin:left center;animation:fx-send 5s cubic-bezier(.65,0,.35,1) infinite}
+.fx-fig:nth-child(2) .fx-bar span{animation-delay:.25s}.fx-fig:nth-child(3) .fx-bar span{animation-delay:.5s}.fx-fig:nth-child(4) .fx-bar span{animation-delay:.75s}.fx-fig:nth-child(5) .fx-bar span{animation-delay:1s}
+@keyframes fx-feed{0%,100%{transform:translateY(0)}18%{transform:translateY(-18px)}36%{transform:translateY(0)}}
+@keyframes fx-send{0%{transform:scaleX(0)}40%,85%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+@media (prefers-reduced-motion: reduce){.fx-fig,.fx-bar span{animation:none}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #121628; color: #F3F4F8; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A3A9C2; padding-bottom: 18px; border-bottom: 1px solid #262C47">
+    <span>01 — Mobil Uygulamalar · UI/UX</span>
+    <span>10</span>
+  </header>
+  <div style="display: grid; grid-template-columns: 96px minmax(0, 1.1fr) minmax(0, 1.3fr) 280px; gap: 40px; align-items: start">
+    <img src="../assets/05f3fe629cda147e3c473bf4b9021b7f.png" alt="Faxly uygulama ikonu" style="width: 96px; height: 96px; border-radius: 22px; display: block">
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: -0.035em">Faxly</h1>
+      <span style="font-size: 18px; color: #A3A9C2">Telefondan Faks · iOS</span>
+    </div>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D3D6E4">Faks makinesine gerek kalmadan telefondan faks gönderme uygulaması. Numarayı yaz, belgeyi ekle, gönder: akış üç adımda bitiyor. Koyu lacivert zemin üzerindeki turuncu aksiyon rengi, gönderim durumunu her ekranda görünür kılıyor.</p>
+    <dl style="margin: 0; display: grid; grid-template-columns: 84px minmax(0, 1fr); row-gap: 10px; font-size: 15px">
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A3A9C2; padding-top: 2px">Yıl</dt><dd style="margin: 0">2026</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A3A9C2; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Onboarding, gönderim, paywall</dd>
+      <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A3A9C2; padding-top: 2px">Renk</dt><dd style="margin: 0; display: flex; gap: 6px; align-items: center"><span style="width: 16px; height: 16px; background: #FF6A2B; display: inline-block"></span><span style="width: 16px; height: 16px; background: #1B2140; border: 1px solid #3A4270; display: inline-block"></span><span style="width: 16px; height: 16px; background: #FFFFFF; display: inline-block"></span></dd>
+    </dl>
+  </div>
+  <div style="flex: 1; min-height: 0; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px">
+    <figure class="fx-fig" style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+      <img src="../assets/37f423e8a508bf6f53222442f2c91cc7.jpg" alt="Faxly onboarding: telefondan faks" style="height: 500px; width: auto; border-radius: 34px; display: block">
+      <span class="fx-bar" aria-hidden="true"><span></span></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A3A9C2">Onboarding · 30 saniyede faks</figcaption>
+    </figure>
+    <figure class="fx-fig" style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+      <img src="../assets/bdbbc82ed52dbd6eb06c7cf0de44166a.jpg" alt="Faxly onboarding: iletim onayı" style="height: 500px; width: auto; border-radius: 34px; display: block">
+      <span class="fx-bar" aria-hidden="true"><span></span></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A3A9C2">Onboarding · İletim onayı</figcaption>
+    </figure>
+    <figure class="fx-fig" style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+      <img src="../assets/0e38e324738e6fb923f2811095939477.jpg" alt="Faxly yeni faks ekranı" style="height: 500px; width: auto; border-radius: 34px; display: block">
+      <span class="fx-bar" aria-hidden="true"><span></span></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A3A9C2">Yeni faks</figcaption>
+    </figure>
+    <figure class="fx-fig" style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+      <img src="../assets/a559c32cc35ededb868bbaa7cc6fccc2.jpg" alt="Faxly gönderilen fakslar listesi" style="height: 500px; width: auto; border-radius: 34px; display: block">
+      <span class="fx-bar" aria-hidden="true"><span></span></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A3A9C2">Fakslar · Durumlar</figcaption>
+    </figure>
+    <figure class="fx-fig" style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+      <img src="../assets/493cbbfc72892e71b4e2481426e5dd4d.jpg" alt="Faxly paywall" style="height: 500px; width: auto; border-radius: 34px; display: block">
+      <span class="fx-bar" aria-hidden="true"><span></span></span>
+      <figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #FF7A3D">Paywall</figcaption>
+    </figure>
+  </div>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+html, body { margin: 0; padding: 0; }
+body { background: #0B0C0F; overflow-x: hidden; }
+.board { width: 1440px; height: 1018px; transform-origin: 0 0; }
+html.framed, html.framed body { overflow: hidden; background: transparent; height: 1018px; }
+/* Netlify rozeti her sayfa çerçevesinin içinde tekrar etmesin */
+html.framed #nl-badge-frame, html.framed [id^="nl-badge"] { display: none !important; }
+/* Ekran dışındaki sayfalarda sürekli animasyonları durdur */
+html.offscreen .board *, html.offscreen .board *::before, html.offscreen .board *::after { animation-play-state: paused !important; }
+/* Telefonda ağır efektleri hafiflet */
+html.lite .bgx-img { animation: none !important; filter: blur(18px) brightness(.4) !important; }
+html.lite .bgx-rise, html.lite .bgx-fall { animation-duration: 48s !important; }
+#gc-rotate { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); padding: 10px 16px; border-radius: 999px; background: rgba(20, 22, 28, .92); color: #F4F4F6; font: 500 14px/1.3 Inter, system-ui, sans-serif; white-space: nowrap; transition: opacity .6s; z-index: 10; }

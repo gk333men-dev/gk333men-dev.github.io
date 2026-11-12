@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>23 NOVA · Gökmen Çevikbaş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#15171C}a:hover{color:#5E6470}
+.lg-stage{position:relative;height:100%;max-width:100%;overflow:hidden;perspective:1400px}
+.lg-stage img{position:absolute;display:block;mix-blend-mode:multiply;will-change:transform,opacity}
+.lg-mark{animation:nv-mark 9s cubic-bezier(.34,1.3,.64,1) infinite,nv-breathe 3s ease-in-out infinite}
+.lg-word{animation:nv-word 9s cubic-bezier(.16,1,.3,1) infinite}
+.lg-tile{animation:nv-t0 9s cubic-bezier(.16,1,.3,1) infinite}
+.lg-tile.lg-d1{animation-name:nv-t1}.lg-tile.lg-d2{animation-name:nv-t2}
+.lg-bar{transform-origin:50% 100%;animation:nv-bar 9s cubic-bezier(.16,1,.3,1) infinite}
+.lg-band{animation:nv-band 9s cubic-bezier(.65,0,.35,1) infinite}
+.lg-still img{animation:none !important}
+@keyframes nv-mark{0%,48%{opacity:1;transform:none;filter:none}54%{opacity:0;transform:scale(1.7) rotate(60deg);filter:blur(8px)}55%{opacity:0;transform:scale(0) rotate(-180deg);filter:none}68%{opacity:1;transform:scale(1.1) rotate(10deg)}74%,100%{opacity:1;transform:none}}
+@keyframes nv-breathe{0%,100%{scale:1}50%{scale:1.05}}
+@keyframes nv-word{0%,48%{opacity:1;transform:none}54%{opacity:0;transform:scaleX(1.8)}56%,62%{opacity:0;transform:scaleX(.1)}74%,100%{opacity:1;transform:none}}
+@keyframes nv-t0{0%,48%{opacity:1;transform:none}54%,64%{opacity:0;transform:translateX(100%) scale(.5)}78%,100%{opacity:1;transform:none}}
+@keyframes nv-t1{0%,48%{opacity:1;transform:none}54%,64%{opacity:0;transform:scale(.2)}76%,100%{opacity:1;transform:none}}
+@keyframes nv-t2{0%,48%{opacity:1;transform:none}54%,64%{opacity:0;transform:translateX(-100%) scale(.5)}78%,100%{opacity:1;transform:none}}
+@keyframes nv-bar{0%,48%{transform:none}54%,72%{transform:scaleY(0)}82%,100%{transform:none}}
+@keyframes nv-band{0%,48%{clip-path:circle(150% at 0% 50%)}54%{clip-path:circle(0% at 100% 50%)}55%,72%{clip-path:circle(0% at 0% 50%)}90%,100%{clip-path:circle(150% at 0% 50%)}}
+@media (prefers-reduced-motion: reduce){.lg-stage img{animation:none !important}}
+</style>
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="board">
+<div style="width: 1440px; height: 1018px; box-sizing: border-box; padding: 52px 80px 48px; background: #F3F2EE; color: #15171C; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 36px; overflow: hidden">
+  <header style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470; padding-bottom: 18px; border-bottom: 1px solid #D9D7D0">
+    <span>02 — Marka Kimliği</span>
+    <span>23</span>
+  </header>
+  <main style="flex: 1; min-height: 0; display: flex; gap: 64px">
+    <section style="width: 360px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6470">Uzay Kargo Markası</span>
+        <h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 88px; line-height: 0.95; letter-spacing: -0.04em">NOVA</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2A2D35">Bir yıldız patlamasından ilham alan simetrik amblem, altın tonlarıyla güven ve prestij taşıyor. Kimlik, bilim kurgu evreninde geçen bir kargo şirketi için giriş kartı, iletişim cihazı ve kargo kutusuna uygulandı.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 28px">
+        <dl style="margin: 0; display: grid; grid-template-columns: 96px minmax(0, 1fr); row-gap: 12px; font-size: 15px; padding-top: 20px; border-top: 1px solid #D9D7D0">
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Yıl</dt><dd style="margin: 0">2023</dd>
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Tür</dt><dd style="margin: 0">Lisans projesi</dd>
+          <dt style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5E6470; padding-top: 2px">Kapsam</dt><dd style="margin: 0">Logo, renk sistemi, ürün mockup</dd>
+        </dl>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 8px"><span style="height: 64px; background: #E6C077; display: block"></span><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4A4F5A">#E6C077</span></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><span style="height: 64px; background: #1C1B1B; display: block"></span><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4A4F5A">P PROCESS BLACK C</span></div>
+        </div>
+      </div>
+    </section>
+    <figure style="margin: 0; flex: 1; min-width: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 40px; box-sizing: border-box">
+      <div class="lg-stage" role="img" aria-label="NOVA logo sistemi, animasyonlu" style="aspect-ratio: 1341 / 1502">
+        <img class="lg-mark" src="../assets/18ada4b102af3ffd100f2d3bce26835b.jpg" alt="" style="left: 37.808%; top: 1.198%; width: 21.924%; height: 31.025%">
+        <img class="lg-word" src="../assets/4c27c784f7d5ff3a9d9d8caa6b6eb699.jpg" alt="" style="left: 34.079%; top: 33.755%; width: 29.456%; height: 5.659%">
+        <img class="lg-tile" src="../assets/6bfdc5befd7394956c33f541bab6e607.jpg" alt="" style="left: 1.342%; top: 41.345%; width: 31.916%; height: 29.694%">
+        <img class="lg-tile lg-d1" src="../assets/80f1e60d7e68da5ab3e1556f4d908bae.jpg" alt="" style="left: 34.004%; top: 41.345%; width: 31.916%; height: 29.694%">
+        <img class="lg-tile lg-d2" src="../assets/1f817453d7e4aa17387a9d3c788e1ea4.jpg" alt="" style="left: 66.667%; top: 41.345%; width: 31.916%; height: 29.694%">
+        <img class="lg-bar" src="../assets/09d647de5adbac80d33c17f30bc7b547.jpg" alt="" style="left: 1.79%; top: 72.37%; width: 10.142%; height: 26.365%">
+        <img class="lg-band" src="../assets/d2e2785374161bf0bfced804968274bc.jpg" alt="" style="left: 13.05%; top: 72.37%; width: 85.16%; height: 26.365%">
+      </div>
+    </figure>
+  </main>
+</div>
+</div>
+<script src="page.js"></script>
+</body>
+</html>
